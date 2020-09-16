@@ -12,7 +12,7 @@ repositories {
 sourceSets {
     main {
         groovy {
-            srcDirs = ['src', 'vasr']
+            srcDirs = ['src', 'vars']
         }
         resources {
             srcDirs = ['resources']
