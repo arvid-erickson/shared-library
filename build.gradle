@@ -18,11 +18,11 @@ sourceSets {
             srcDirs = ['resources']
         }
     }
-    test {
+/*    test {
         groovy {
             srcDirs = ['test/groovy']
         }
-    }
+    } */
 }
 
 version = '0.0.1'
