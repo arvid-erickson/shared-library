@@ -1,0 +1,5 @@
+pipelineType: groovy
+runTests: true
+testCommand: "groovy pipeline.groovy"
+deployUponTestSuccess: true
+deploymentEnvironment: "staging"
