@@ -2,14 +2,11 @@
 // @Library('jenkins-library') _
 // @Library('https://github.com/arvid-erickson/shared-library') _
 // new pipeline()
-shared.library.execute()
+// shared.library.execute()
 
-
-/*
 stage('Test') {
     print "Test stage" 
 }
 stage('Compile') {
     print "Compile stage"
 }
-*/
