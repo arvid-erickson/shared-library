@@ -1,7 +1,6 @@
 #!/usr/bin/env groovy
 @Library('jenkins-library') _
-import *
-new pipeline.groovy
+new pipeline()
 
 /*
 stage('Test') {
