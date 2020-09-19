@@ -5,10 +5,6 @@ plugins {
     id 'java-library'
 }
 
-repositories {
-    jcenter()
-}
-
 sourceSets {
     main {
         groovy {
@@ -25,26 +21,27 @@ sourceSets {
     } 
 }
 
+repositories {
+    jcenter()
+    maven {
+        url "https://repo.jenkins-ci.org/releases/"
+    }
+}
+
 version = '0.0.1'
 group = ''
 
 jar {
     manifest {
         attributes('Implementation-Title': project.name,
-                   'Implementation.Version': project.version)
+                   'Implementation-Version': project.version)
     }
 }
 
 dependencies {
-    implementation 'org.codehaus.groovy:groovy-all:2.5.11'
-    testImplementation 'org.spockframework:spock-core:1.3-groovy-2.5'
-/*    compile group: 'org.apache.ivy', name: 'ivy', version: '2.5.0'
-    compile group: 'org.jenkins-ci.main', name: 'jenkins-core', version: '2.255'
-    compile 'org.jenkins-ci.main:jenkins-core:2.254'
-    testCompile group: 'com.lesfurets', name: 'jenkins-pipeline-unit', version: '1.1'
-    compile group: 'org.jenkins-ci.plugins.workflow', name: 'workflow-step-api', version: '2.13'
-    compile 'org.jenkins-ci.plugins.workflow:workflow-step-api:2.19@jar'
-    compile 'org.jenkins-ci.plugins:pipeline-utility-steps:2.13.0@jar' */
+    compile 'org.codehaus.groovy:groovy-all:2.5.11'
+    compile 'org.spockframework:spock-core:1.3-groovy-2.5'
+    compile 'org.jenkins-ci.main:jenkins-core:2.235.1'
 }
 
 compileGroovy.enabled = true
