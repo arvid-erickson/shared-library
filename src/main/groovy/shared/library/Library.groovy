@@ -17,5 +17,11 @@ class Library {
         stage("Stage 3") {
             echo "Executing Stage 3"
           }
+        stage("Stage 4") {
+            echo "Executing Stage 2"
+          }
+        stage("Stage 5") {
+            echo "Executing Stage 3"
+          }
     }
 }
