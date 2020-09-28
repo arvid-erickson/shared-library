@@ -38,7 +38,7 @@ sharedLibrary {
     pluginDependencies {
         dependency("org.jenkins-ci.plugins", "git", "3/9/3")
         dependency("org.jenkins-ci.plugins", "pipeline-input-step", "2.9")
-        dependency("org.jenkins-ci.plugins", "junit", 1.26.1")
+        dependency("org.jenkins-ci.plugins", "junit", '1.26.1')
         dependency("org.jenkins-ci.plugins", "ssh-credentials", '1.14')
         dependency("org.jenkins-ci.plugins", "pipeline-build-step", "2.10")
         dependency("org.jenkins-ci.plugins", "scm-api", "2.6.3")
