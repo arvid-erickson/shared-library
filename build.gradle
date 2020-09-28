@@ -42,7 +42,7 @@ sharedLibrary {
         dependency("org.jenkins-ci.plugins", "ssh-credentials", '1.14')
         dependency("org.jenkins-ci.plugins", "pipeline-build-step", "2.10")
         dependency("org.jenkins-ci.plugins", "scm-api", "2.6.3")
-        dependency("org.apache.mven", "mavin-artifact", "3.6.3")
+        dependency("org.apache.maven", "maven-artifact", "3.6.3")
     }
 }
 
