@@ -4,12 +4,12 @@
 // new pipeline()
 // shared.library.execute()
 
-// stage('Test') {
-//    print "Test stage" 
-// }
-// stage('Compile') {
-//    print "Compile stage"
-// }
+stage('Test') {
+    print "Test stage" 
+}
+stage('Compile') {
+    print "Compile stage"
+}
 stage('Gradle') {
     sh 'gradle build clean'   
 }
