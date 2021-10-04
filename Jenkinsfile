@@ -11,5 +11,5 @@ stage('Compile') {
     print "Compile stage"
 }
 stage('Gradle') {
-    sh 'gradle build clean'   
+    print "Gradle stage"   
 }
